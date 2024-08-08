@@ -74,10 +74,6 @@ function undefsafe(obj, path, value) {
       key = prop;
     }
 
-    if (Object.getOwnPropertyNames(obj).indexOf(key) == -1) {
-      return undefined;
-    }
-
     obj = obj[key];
     if (obj === undefined || obj === null) {
       break;
